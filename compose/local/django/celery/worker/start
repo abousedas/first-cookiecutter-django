@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -o errexit
+set -o nounset
+
+
+celery -A my_awesome_project.taskapp worker -l INFO
